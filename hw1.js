@@ -30,7 +30,7 @@ const Homework1 = class Homework1 {
 
 /**
  * *****************
- * ***** TODO ******
+ * ***** TODO (DONE) ******
  * *****************
  * 
  * Implement the Circle class below. It needs to have a radius(Number) property and a color(String) properties. Both properties should be set in a constructor
@@ -58,7 +58,7 @@ const Circle = class Circle {
 
 /**
  * *****************
- * ***** TODO ******
+ * ***** TODO (DONE) ******
  * *****************
  * 
  * Implement the Student class below. 
