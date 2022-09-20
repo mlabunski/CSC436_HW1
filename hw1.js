@@ -1,6 +1,7 @@
 'use strict'
 
 /*** 
+ * Matt Labunski
  * 
  * Directions:
  * 1. Extract hw1.zip
@@ -89,7 +90,7 @@ const Student = class Student {
 
 /**
  * *****************
- * ***** TODO ******
+ * ***** TODO (DONE) ******
  * *****************
  * 
  * Implement the Product class below. 
@@ -101,6 +102,15 @@ const Student = class Student {
  */
 
 const Product = class Product {
+
+    constructor(productInfo){
+
+        const values = productInfo.split(",");
+
+        this.name = values[0];
+        this.price = Number(values[1]);
+        this.availability = values[2];
+    }
 
     /**
      * *****************
