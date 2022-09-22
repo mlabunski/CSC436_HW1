@@ -139,11 +139,13 @@ const Product = class Product {
      * This method can also be written in one line; if doing so, consider using String interpolation when calling the product constructor
      * Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array 
      */
-    static halfOff = (products) => {}
+    static halfOff = (products) => {
+        
+    }
 
     /**
      * *****************
-     * ***** TODO ******
+     * ***** TODO (DONE) ******
      * *****************
      * 
      * Implement the static method printProducts below 
@@ -154,7 +156,19 @@ const Product = class Product {
      * Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array 
      * Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat (currency formatting)
      */
-    static printProducts = (products) => {}
+    static printProducts = (products) => {
+        products.forEach((product) => {
+            if (product.availability === 'In Stock') {
+                console.log('Product: ' + product.name + 
+                ', Cost: ' +  product.price.toLocaleString('en-US', {style: 'currency',currency: 'USD'}) +
+                 ', Availability: Yes')
+            } 
+            else {console.log('Product: ' + product.name + 
+            ', Cost: ' + product.price.toLocaleString('en-US', {style: 'currency',currency: 'USD'}) + 
+            ', Availability: No')}
+        })
+    }
+
 
  };
 
