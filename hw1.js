@@ -130,7 +130,7 @@ const Product = class Product {
 
     /**
      * *****************
-     * ***** TODO ******
+     * ***** TODO (DONE) ******
      * *****************
      * 
      * Implement the static method halfOff below 
@@ -140,7 +140,9 @@ const Product = class Product {
      * Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array 
      */
     static halfOff = (products) => {
-        
+        const halfOffProducts = JSON.parse(JSON.stringify(products));
+        halfOffProducts.map(product => product.price = product.price *0.5);
+        return halfOffProducts;
     }
 
     /**
