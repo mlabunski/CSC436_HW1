@@ -114,7 +114,7 @@ const Product = class Product {
 
     /**
      * *****************
-     * ***** TODO ******
+     * ***** TODO (DONE) ******
      * *****************
      * 
      * Implement the static method inStock below 
@@ -123,7 +123,9 @@ const Product = class Product {
      * This can be implmeneted in one line.
      * Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array 
      */
-    static inStock = (products) => {}
+    static inStock = (products) => {
+        return products.filter(product => product.availability === 'In Stock');
+    }
 
 
     /**
